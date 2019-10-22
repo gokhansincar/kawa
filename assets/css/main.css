@@ -99,8 +99,8 @@ strong, b {
 /* IMAGES
 ----------------------------------------------*/
 img {
-	display: table-header-group;
-  width: 50%;
+	display: block;
+  width: 100%;
   height: auto;
 }
 
@@ -235,8 +235,8 @@ body {
 /* MAIN
 ----------------------------------------------*/
 #main {
-	width: 100%;
-	max-width: none;
+	width: 90%;
+	margin: 0 auto;
 	padding-top: 5em; /*if header is fixed !*/
 }
 #index #main {
@@ -590,61 +590,82 @@ body {
 	width: 100%;
 }
 
+/* Icon */
 
-/* ICONS
-----------------------------------------------*/
-.featured-icons .icon,
-.featured.icon {
-	font-size: 4em;
-	display: inline-block;
-	padding: .2em;
-}
+	.icon {
+		text-decoration: none;
+		border-bottom: none;
+		position: relative;
+		text-align: center;
+	}
 
+		.icon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			text-transform: none !important;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 400;
+		}
 
-.icon {
-	position: relative;
-}
+		.icon > .label {
+			display: none;
+		}
 
-.icon.circle {
-	transition: all 0.2s ease-in-out;
-	border: 0;
-	border-radius: 100%;
-	display: inline-block;
-	font-size: 1.25em;
-	height: 2.25em;
-	left: 0;
-	line-height: 2.25em;
-	text-align: center;
-	text-decoration: none;
-	top: 0;
-	width: 2.25em;
-	color: #fff;
-}
-.icon.circle:hover {
-	top: -0.2em;
-}
+		.icon:before {
+			line-height: inherit;
+		}
 
-.icon > .label {
-	display: none;
-}
+		.icon.solid:before {
+			font-weight: 900;
+		}
 
-.icon.circle.fa-twitter {
-	background: #70aecd;
-}
-.icon.circle.fa-facebook {
-	background: #7490c3;
-}
-.icon.circle.fa-google-plus {
-	background: #db6b67;
-}
-.icon.circle.fa-github {
-	background: #dcad8b;
-}
-.icon.circle.fa-dribbble {
-	background: #da83ae;
-}
+		.icon.brands:before {
+			font-family: 'Font Awesome 5 Brands';
+		}
 
+		.icon.style2:before {
+			border-radius: 2.75em;
+			display: inline-block;
+			height: 2.75em;
+			line-height: 2.75em;
+			width: 2.75em;
+		}
 
+		.icon.major {
+			display: block;
+			margin: 0 0 1rem 0;
+		}
+
+			.icon.major:before {
+				font-size: 1.25rem;
+			}
+
+	a.icon.style2:before {
+		-moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+	}
+
+	.icon.style2:before {
+		box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+	}
+
+	a.icon.style2:hover:before {
+		box-shadow: inset 0 0 0 1px #47D3E5;
+		color: #47D3E5;
+	}
+
+	a.icon.style2:active:before {
+		background-color: rgba(71, 211, 229, 0.1);
+		box-shadow: inset 0 0 0 1px #47D3E5;
+		color: #47D3E5;
+	}
 
 
 /* LAYOUT --> INDEX/HOME
@@ -768,10 +789,6 @@ body {
 --------------------------------------------*/
 #call-to-action {
 	background-color: #645862;
-	background-image: url(../images/light-tl.svg),
-										url(../images/light-tr.svg),
-										url(../images/overlay.png),
-										url(../images/banner-photo.jpg);
 	background-position: top left, top right, top left, bottom center;
 	background-attachment: scroll, scroll, scroll, fixed;
 	background-repeat: no-repeat, no-repeat, repeat, no-repeat;
@@ -1006,6 +1023,23 @@ form .row:last-child {
 	.main-header .content {
 		padding: 0 6%;
 	}
+
+	.section {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.section.reverse {
+		flex-direction: row-reverse!important;
+	}
+	.section .text, .section.reverse .text {
+		width: 50%;
+	}
+	.section .image, .section.reverse .image  {
+		width: 50%;
+	}
+	
+
 
 
 	/*Banner*/
