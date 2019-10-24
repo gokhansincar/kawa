@@ -4,10 +4,11 @@ ABOUT ME
 -->
 <html lang="English">
 	<head>
-		<title>About Us</title>
+		<title>Contact Us</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -30,72 +31,73 @@ ABOUT ME
 			<a href="about me.html">About us</a>
 		</div>
 	</header>
-	<main class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+  <h1 class="content-head is-center">Contact Us!</h1>
+  <aside>
+    <p>
+      We would <em>love</em> to hear from you! </p>
+    <p>Please use the <b><em>Contact Form</em></b>
+      to send us a message.
+    </p>
+  </aside>
 
-				<!-- One -->
-					<section class="">
-						<div class="content">
-							<h1>Gokhan Sincar</h1>
-							<p class="major">I dont know what i will say at here :)
-							</p>
-						</div>
-					</section>
+  <!-- START HERE -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- Style The Contact Form How Ever You Prefer -->
+  <link rel="stylesheet" href="assets/css/main.css">
 
-					<section class="wrapper style1 align-center">
-						<div class="inner medium">
-							<h2>Interested With Your Feedback</h2>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" value="" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" value="" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="6"></textarea>
-									</div>
-								</div>
-								<ul class="actions special">
-									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-								</ul>
-							</form>
+  <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="info@sincar.net"
+    action="https://script.google.com/macros/s/AKfycbzO5dniVsff1hwa9_IC0968wDsF45JvH7Pq0n-9D6M5aUFNLN5r/exec">
 
-						</div>
-					</section>
+    <div align="center"class="form-elements">
+      <fieldset class="pure-group">
+        <label for="name">Name: </label>
+        <input id="name" name="name" placeholder="Your Name" />
+      </fieldset>
 
-				<!-- Footer -->
+      <fieldset class="pure-group">
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" rows="10" placeholder="Tell us what's on your mind..."></textarea>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email"><em>Your</em> Email Address:</label>
+        <input id="email" name="email" type="email" value="" required placeholder="your.name@email.com" />
+      </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks</em> for contacting us!
+        We will get back to you soon!</h2>
+    </div>
+
+  </form>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="assets/js/form-submission-handler.js"></script>
+  <!-- END -->
+
+  				<!-- Footer -->
 					<footer class="wrapper style1 align-center">
 						<div class="inner">
 							<ul class="icons">
-								<li><a href="https://twitter.com/saperiorapa" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.facebook.com/saperiorapa" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/saperiorapa" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://www.linkedin.com/in/g%C3%B6khan-sincar-20443b179/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="mailto:g.sincar2103@gmail.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+								<li align="center"><a href="https://www.facebook.com/saperiorapa" class="fa fa-facebook"></a></li>
+								<li align="center"><a href="https://twitter.com/saperiorapa" class="fa fa-twitter"></a></a></li>
+								<li align="center"><a href="https://www.instagram.com/saperiorapa" class="fa fa-instagram"></a></li>
+								<li align="center"><a href="https://www.linkedin.com/in/g%C3%B6khan-sincar-20443b179/" class="fa fa-linkedin"></a></li>
+                <li align="center"><a href="https://github.com/gokhansincar" class="fa fa-github"></a></li>
+                <li align="center"><a href="mailto:gokhan.sincar@powercoders.org" class="fa fa-envelope"></a></li>
 							</ul>
-							<p>&copy; Gokhan Sincar</p>
+							<p align="center">&copy; Gokhan Sincar</p>
 						</div>
 					</footer>
 
-			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</main>
 </body>
 
 </html>
