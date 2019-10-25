@@ -1,13 +1,14 @@
 <!DOCTYPE HTML>
 <!--
-Hakkımızda
+ABOUT ME
 -->
-<html lang="Turkce">
+<html lang="English">
 	<head>
-		<title>Hakkımızda</title>
+		<title>İletişim</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -18,80 +19,93 @@ Hakkımızda
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="msapplication-config" content="favicons/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
-	</head>
-		<a href="about meFR.html" lang="fr" hreflang="FR">Francais</a>
-		<a href="about me.html" lang="en" hreflang="EN">English</a>
-		<a href="about meTR.html" lang="tr" hreflang="TR">Turkce</a>
+  </head>
+  
+  <body>
+      <main id="main" class="is-preload">
+    
+    
+    
+        <div align="center">
+          <a href="indexTR.html">Home Page </a>
+          <a href="about meTR.html">About us</a>
+        </div>
+    
+        <header>
+            <section class="section">
+                <div align="left" class="text">
+                    <a href="about meFR.html" lang="fr" hreflang="FR">Francais</a>
+                    <a href="about me.html" lang="en" hreflang="EN">English</a>
+                    <a href="about meTR.html" lang="tr" hreflang="TR">Turkce</a>	
+                </div>
+              </section>
+    
+        </header>
+    
+        <!-- Wrapper -->
+  <h1 class="content-head is-center">Contact Us!</h1>
+  <aside>
+    <p> Sizden haber almak isteriz! </p>
+    <p>Bize mesaj göndermek için lütfen <b><em>İletişim Formunu</em></b> kullanın.</p>
+  </aside>
 
-		<div align="center">
-			<a href="indexTR.html">Ana Sayfa</a>
-			<a href="about meTR.html">Hakkımızda</a>
-		</div>
+  <form method="POST" class="gform pure-form pure-form-stacked" data-email="info@sincar.net"
+    action="https://script.google.com/macros/s/AKfycbzO5dniVsff1hwa9_IC0968wDsF45JvH7Pq0n-9D6M5aUFNLN5r/exec">
 
-	<main class="is-preload">
+    <div align="center"class="form-elements">
+      <fieldset class="pure-group">
+        <label for="name">Name: </label>
+        <input id="name" name="name" placeholder="Your Name" />
+      </fieldset>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+      <fieldset class="pure-group">
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" rows="10" placeholder="Tell us what's on your mind..."></textarea>
+      </fieldset>
 
-				<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-							<h1>Gokhan Sincar</h1>
-							<p class="major">Burada ne söyleyeceğimi bilmiyorum :)
-							</p>
-						</div>
-					</section>
+      <fieldset class="pure-group">
+        <label for="email"><em>Your</em> Email Address:</label>
+        <input id="email" name="email" type="email" value="" required placeholder="your.name@email.com" />
+      </fieldset>
 
-					<section class="wrapper style1 align-center">
-						<div class="inner medium">
-							<h2>Görüşlerinizle İlgileniyorum</h2>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Isminiz</label>
-										<input type="text" name="name" id="name" value="" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" value="" />
-									</div>
-									<div class="field">
-										<label for="message">Mesajınız</label>
-										<textarea name="message" id="message" rows="6"></textarea>
-									</div>
-								</div>
-								<ul class="actions special">
-									<li><input type="submit" name="submit" id="submit" value="Mesajı Yolla" /></li>
-								</ul>
-							</form>
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </div>
 
-						</div>
-					</section>
+       <!-- Customise the Thankyou Message People See when they submit the form: -->
+       <div style="display:none;" id="thankyou_message">
+        <h2 align="center">
+          Bizimle iletişime geçtiğiniz için teşekkürler!
+          Yakında size geri döneceğiz!
+        </h2>
+    </div>
 
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://twitter.com/saperiorapa" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.facebook.com/saperiorapa" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/saperiorapa" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://www.linkedin.com/in/g%C3%B6khan-sincar-20443b179/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="mailto:g.sincar2103@gmail.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-							<p>&copy; Gokhan Sincar</p>
-						</div>
-					</footer>
 
-			</div>
+  </form>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="assets/js/form-submission-handler.js"></script>
 
-	</body>
+
+  <!-- END -->
+    				<!-- Footer -->
+            <footer class="wrapper style1 align-center">
+              <div class="inner">
+                <ul class="icons">
+                  <li align="center"><a href="https://www.facebook.com/saperiorapa" class="fa fa-facebook"></a></li>
+                  <li align="center"><a href="https://twitter.com/saperiorapa" class="fa fa-twitter"></a></a></li>
+                  <li align="center"><a href="https://www.instagram.com/saperiorapa" class="fa fa-instagram"></a></li>
+                  <li align="center"><a href="https://www.linkedin.com/in/g%C3%B6khan-sincar-20443b179/" class="fa fa-linkedin"></a></li>
+                  <li align="center"><a href="https://github.com/gokhansincar" class="fa fa-github"></a></li>
+                  <li align="center"><a href="mailto:gokhan.sincar@powercoders.org" class="fa fa-envelope"></a></li>
+                </ul>
+                <p align="center">&copy; <strong>Gokhan Sincar</strong></p>
+              </div>
+            </footer>
+  
+
+  </main>
+
+</body>
+
 </html>

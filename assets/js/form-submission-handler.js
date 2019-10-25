@@ -45,7 +45,7 @@
     formData.formDataNameOrder = JSON.stringify(fields);
     formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
     formData.formGoogleSend
-      = form.dataset.email || "g.sincar2103@gmail.com"; // no email by default
+      = form.dataset.email || ""; // no email by default
 
     return {data: formData, honeypot: honeypot};
   }
@@ -74,7 +74,7 @@
           if (formElements) {
             formElements.style.display = "none"; // hide form
           }
-          var thankYouMessage = form.querySelector(".thankyou_message");
+          var thankYouMessage = form.querySelector("#thankyou_message");
           if (thankYouMessage) {
             thankYouMessage.style.display = "block";
           }

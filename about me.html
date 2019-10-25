@@ -19,35 +19,40 @@ ABOUT ME
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="msapplication-config" content="favicons/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
-	</head>
-	<body>
-		<header>
-		<a href="about meFR.html" lang="fr" hreflang="FR">Francais</a>
-		<a href="about me.html" lang="en" hreflang="EN">English</a>
-		<a href="about meTR.html" lang="tr" hreflang="TR">Turkce</a>
-
-		<div align="center">
-			<a href="index.html">Home Page </a>
-			<a href="about me.html">About us</a>
-		</div>
-	</header>
-
+  </head>
+  
+  <body>
+      <main id="main" class="is-preload">
+    
+    
+    
+        <div align="center">
+          <a href="index.html">Home Page </a>
+          <a href="about me.html">About us</a>
+        </div>
+    
+        <header>
+            <section class="section">
+                <div align="left" class="text">
+                    <a href="about meFR.html" lang="fr" hreflang="FR">Francais</a>
+                    <a href="about me.html" lang="en" hreflang="EN">English</a>
+                    <a href="about meTR.html" lang="tr" hreflang="TR">Turkce</a>	
+                </div>
+              </section>
+    
+        </header>
+    
+        <!-- Wrapper -->
   <h1 class="content-head is-center">Contact Us!</h1>
   <aside>
     <p>
-      We would <em>love</em> to hear from you! </p>
+      We would love to hear from you! </p>
     <p>Please use the <b><em>Contact Form</em></b>
       to send us a message.
     </p>
   </aside>
 
-  <!-- START HERE -->
-  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <!-- Style The Contact Form How Ever You Prefer -->
-  <link rel="stylesheet" href="assets/css/main.css">
-
-  <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="info@sincar.net"
+  <form method="POST" class="gform pure-form pure-form-stacked" data-email="info@sincar.net"
     action="https://script.google.com/macros/s/AKfycbzO5dniVsff1hwa9_IC0968wDsF45JvH7Pq0n-9D6M5aUFNLN5r/exec">
 
     <div align="center"class="form-elements">
@@ -70,33 +75,39 @@ ABOUT ME
         <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
     </div>
 
-    <!-- Customise the Thankyou Message People See when they submit the form: -->
-    <div class="thankyou_message" style="display:none;">
-      <h2><em>Thanks</em> for contacting us!
-        We will get back to you soon!</h2>
+       <!-- Customise the Thankyou Message People See when they submit the form: -->
+       <div style="display:none;" id="thankyou_message">
+        <h2 align="center">
+            Thanks for contacting us!
+            We will get back to you soon!
+        </h2>
     </div>
+
 
   </form>
 
   <!-- Submit the Form to Google Using "AJAX" -->
   <script data-cfasync="false" src="assets/js/form-submission-handler.js"></script>
+
+
   <!-- END -->
+    				<!-- Footer -->
+            <footer class="wrapper style1 align-center">
+              <div class="inner">
+                <ul class="icons">
+                  <li align="center"><a href="https://www.facebook.com/saperiorapa" class="fa fa-facebook"></a></li>
+                  <li align="center"><a href="https://twitter.com/saperiorapa" class="fa fa-twitter"></a></a></li>
+                  <li align="center"><a href="https://www.instagram.com/saperiorapa" class="fa fa-instagram"></a></li>
+                  <li align="center"><a href="https://www.linkedin.com/in/g%C3%B6khan-sincar-20443b179/" class="fa fa-linkedin"></a></li>
+                  <li align="center"><a href="https://github.com/gokhansincar" class="fa fa-github"></a></li>
+                  <li align="center"><a href="mailto:gokhan.sincar@powercoders.org" class="fa fa-envelope"></a></li>
+                </ul>
+                <p align="center">&copy; <strong>Gokhan Sincar</strong></p>
+              </div>
+            </footer>
+  
 
-  				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">
-								<li align="center"><a href="https://www.facebook.com/saperiorapa" class="fa fa-facebook"></a></li>
-								<li align="center"><a href="https://twitter.com/saperiorapa" class="fa fa-twitter"></a></a></li>
-								<li align="center"><a href="https://www.instagram.com/saperiorapa" class="fa fa-instagram"></a></li>
-								<li align="center"><a href="https://www.linkedin.com/in/g%C3%B6khan-sincar-20443b179/" class="fa fa-linkedin"></a></li>
-                <li align="center"><a href="https://github.com/gokhansincar" class="fa fa-github"></a></li>
-                <li align="center"><a href="mailto:gokhan.sincar@powercoders.org" class="fa fa-envelope"></a></li>
-							</ul>
-							<p align="center">&copy; Gokhan Sincar</p>
-						</div>
-					</footer>
-
+  </main>
 
 </body>
 
