@@ -35,7 +35,6 @@ textarea {
 	font-size: 1em;
 	font-weight: 300; /*this is a "light" weight*/
 	letter-spacing: 0.025em;
-	line-height: 1.75em;
 }
 
 
@@ -229,7 +228,9 @@ img {
 /* BODY
 ----------------------------------------------*/
 body {
-	background: #f3f6fa;
+	background: #c9b39f;
+	background-image: url(/images/)
+
 }
 aside {
     padding: 0.3em 1em;
@@ -323,7 +324,7 @@ button {
 	padding-top: .5em;
 	padding-bottom: .5em;
 	background: rgba(255,255,255,1);
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.781);
 }
 
 #header.menu-is-open {
@@ -715,13 +716,6 @@ button {
 
 	justify-content: center;
 	align-items: center;
-
-	/*4 backgrounds !*/
-	background-color: #645862;
-	background-image: url(../images/light-bl.svg),
-										url(../images/light-br.svg),
-										url(../images/overlay.png),
-										url(../images/banner-photo.jpg);
 
 	background-position: bottom left, bottom right, top left, top center;
 	background-repeat: no-repeat, no-repeat, repeat, no-repeat;
