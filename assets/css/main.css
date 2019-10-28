@@ -31,7 +31,7 @@ button,
 input,
 select,
 textarea {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Abhaya Libre', serif;
 	font-size: 1em;
 	font-weight: 300; /*this is a "light" weight*/
 	letter-spacing: 0.025em;
@@ -1096,9 +1096,9 @@ form .row:last-child {
 
 
 			.fa {
-				padding: 20px;
-				font-size: 30px;
-				width: 30px;
+				padding: 10px;
+				font-size: 20px;
+				width: 40px;
 				text-align: center;
 				text-decoration: none;
 				margin: 5px 2px;
@@ -1119,8 +1119,8 @@ form .row:last-child {
 				color: white;
 			  }
 			  
-			  .fa-envelope {
-				background: #dd4b39;
+			  .fa-instagram {
+				background: #125688;
 				color: white;
 			  }
 			  
@@ -1134,8 +1134,8 @@ form .row:last-child {
 				color: white;
 			  }
 			  
-			  .fa-instagram {
-				background: #125688;
+			  .fa-envelope {
+				background: #dd4b39;
 				color: white;
 			  }
 			  
