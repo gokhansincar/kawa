@@ -23,20 +23,22 @@ Kawa le Forgeron Version Francaise
 </head>
 
 
-<select name="select-city" onchange="location = this.value;">
-	<option value="">Language selection</option>
-	<option value="indexFR.html">Francais</option>
-	<option value="index.html">English</option>
-	<option value="indexTR.html">Türkçe</option>
-</select>
-
 <body>
 	<header>
 
-		<div align="center">
-			<a href="indexFR.html">Page d'accueil </a>
-			<a href="aboutFR.html">Contactez-nous</a>
-		</div>
+			<nav class="menu">
+					<ul>
+					<li><a href="indexFR.html">Page d'accueil </a></li>
+					  <li><a href="#">Sélection de la langues</a>
+						<ul>
+						  <li><a href="indexFR.html">Francais</a></li>
+						  <li><a href="index.html">English</a></li>
+						  <li><a href="indexTR.html">Türkçe</a></li>
+						</ul>   
+					</li>
+					<li><a href="aboutFR.html">Contactez-nous</a></li>
+					</ul>
+				  </nav>  
 
 	</header>
 	<main id="main" class="is-preload">

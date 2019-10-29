@@ -23,27 +23,28 @@ BlackSmith Kawa English Version
 </head>
 
 
-<select name="select-city" onchange="location = this.value;">
-		<option value="">Language selection</option>
-		 <option value="kawa3FR.html">Francais</option>
-		 <option value="kawa3.html">English</option>
-		 <option value="kawa3TR.html">Türkçe</option>
-		</select>
-
-<select align="right" name="select-city" onchange="location = this.value;">
-		<option value="">Select Version</option>
-		 <option value="kawa.html">Version 1</option>
-		 <option value="kawa2.html">Version 2</option>
-		 <option value="kawa3.html">Version 3</option>
-		</select>
-
 <body>
 	<header>
 
-		<div align="center">
-			<a href="index.html">Home Page </a>
-			<a href="about.html">Contact Us</a>
-		</div>
+			<nav class="menu">
+					<ul>
+					<li><a href="index.html">Home Page</a></li>
+					<li><a href="#">Version</a>
+					  <ul>
+						<li><a href="kawa.html">Version 1</a></li>
+						<li><a href="kawa2.html">Version 2</a></li>
+						<li><a href="kawa3.html">Version 3</a></li>
+					  </ul> 
+					  <li><a href="#">Language selection</a>
+						<ul>
+						  <li><a href="kawa3FR.html">Francais</a></li>
+						  <li><a href="kawa3.html">English</a></li>
+						  <li><a href="kawa3TR.html">Türkçe</a></li>
+						</ul>   
+					</li>
+					<li><a href="about.html">Contact Us</a></li>
+					</ul>
+				  </nav>  
 
 	</header>
 	<main id="main" class="is-preload">
