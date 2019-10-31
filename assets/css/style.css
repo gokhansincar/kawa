@@ -115,7 +115,7 @@ img {
 
 /*Form elements placeholders*/
 ::placeholder {
-	color:#ccc;
+	color:rgb(255, 13, 13);
 }
 
 
@@ -641,7 +641,7 @@ button {
 
 	font-weight: 900;
 	letter-spacing: 0.2em;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	text-align: center;
 
 	color: inherit;
