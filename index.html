@@ -26,11 +26,20 @@ BlackSmith Kawa English Version
 <body>
 	<header class="header-fixed">
 
+		<figure id="logo" class="font700">
+			<a href="http://sincar.net/">SiNCaR</a>
+		  </figure>
+	
+		  <figure id="nav-triggers">
+			<a href="javascript:void(0)" id="open-menu" class="trigger"><img src="img/burger-icon.svg" alt="Burger Menu Icon"></a>
+			<a href="javascript:void(0)" id="close-menu" class="trigger"><img src="img/close-icon.svg" alt="Close Menu Icon"></a>
+		  </figure>
+
 			<nav class="menu">
-					<ul>
+					<ul class="top-menu">
 					<li><a href="index.html">Home Page</a></li>
 					  <li><a href="#">Language</a>
-						<ul>
+						<ul class="sub-menu">
 						  <li><a href="indexFR.html">Francais</a></li>
 						  <li><a href="index.html">English</a></li>
 						  <li><a href="indexTR.html">Türkçe</a></li>
@@ -140,6 +149,19 @@ BlackSmith Kawa English Version
 		</div>
 	</main>
 
+	<script>
+			const body = document.querySelector("body");
+			const openMenu = document.querySelector("#open-menu");
+			const closeMenu = document.querySelector("#close-menu");
+		
+			openMenu.addEventListener('click', function() {
+			  body.classList.add('menu-is-open');
+			});
+			closeMenu.addEventListener('click', function() {
+			  body.classList.remove('menu-is-open');
+			});
+		  </script>
+		
 </body>
 
 </html>
