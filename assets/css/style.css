@@ -758,7 +758,6 @@ button {
 --------------------------------------------*/
 .style-1 {
 	flex-direction: column-reverse;
-	background-color: #83d3c9;
 	color: #fff;
 }
 
@@ -978,7 +977,6 @@ form .row:last-child {
 		padding-bottom: 1em;
 	}
 
-
 	/*LOGO*/
 	#logo {
 		font-size: 1em;
@@ -1028,12 +1026,10 @@ form .row:last-child {
 		margin: 0;
 	}
 
-
 	/*CONTAINER*/
 	.container {
 		margin-bottom: 2em;
 	}
-
 
 	/* CONTENT
 	----------------------------------*/
