@@ -233,15 +233,13 @@ img {
 	padding: 0 2%;
 }
 
-.menu {
-	background-color: chartreuse;
-}
+/* .menu {
+} */
 .menu .top-menu{
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	display: flex;
-	background-color: cyan;
   }
   .sub-menu {
 	  width: 100%;
