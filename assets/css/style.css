@@ -243,6 +243,7 @@ img {
   }
   .sub-menu {
 	  width: 100%;
+
   }
    
   .menu li{
@@ -881,71 +882,110 @@ form .row:last-child {
 ===================================================================================*/
 /* >= 736px
 ----------------------------------------------*/
-@media (min-width: 736px) {
+@media (max-width: 869px) {
 
-	/* COMMON
-	----------------------------------*/
-	/*Main*/
-	#main {
-		max-width: 95%;
-		margin-left: auto;
-		margin-right: auto;
-		transition: max-width .3s ease;
-	}
-	#index .main-header {
-		padding: 5em 0 3em;
-	}
-
-	/*Footer*/
-	.copyright li {
-		display: inline-block;
-	}
-	.copyright li:first-child:after {
-		content: "";
-		display: inline-block;
-		width: 1em;
-		border-right: dotted 1px #8a8a8a;
-	}
-
-	/*Header Figure*/
-	.header-figure .icon {
-		font-size: 3.5em;
-	}
-	.header-figure:before,
-	.header-figure:after {
-		width: 43%;
-	}
-
-
-	/* HOME
-	---------------------------------*/
-	/*Banner*/
-	#banner {
-		min-height:75vh;
-		background-size: 15em, 15em, auto, cover;
-	}
-	#banner .inner {
-		width: auto;
-		background: rgb(209, 209, 203);
-	}
-	#banner .inner br {
+	/* HELPER Classes*/
+	.row:not(.top-header) {
 		display: block;
 	}
 
-
-	/* CONTACT
-	----------------------------------*/
-	#contact .style-4 {
-		padding: 4%;
-		max-width: 768px;
+	/*LOGO */
+	.menu-is-open #logo {
+		position: relative;
+		z-index: 1;
+		color: #fff;
 	}
+
+	/*Hide the Nav*/
+#main-nav {
+	display: none;
+}
+/*Show the Nav Triggers*/
+#nav-triggers {
+	display: block;
+	width: 44px;
+	height: 44px;
+	position: relative;
+	z-index: 1;
+
+	overflow: hidden;
+
+}
+.trigger {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+
+background-color: initial;
+}
+.trigger img {
+	width: 60%;
+}
+/*WHEN menu is closed*/
+#close-menu {
+	left: -100%;
+}
+
+/* When menu is opened*/
+.menu-is-open #open-menu {
+	left: -100%;
+}
+.menu-is-open #close-menu {
+	left: 0;
+}
+/* MOBILE NAV */
+
+.menu-is-open {
+	overflow: hidden;
+}
+.menu-is-open #main-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .9);
+	width: 100vw;
+	height: 100vh;
+
+}
+
+.menu {
+	text-align: center;
+	font-size: 4vw;
+}
+
+.menu li {
+	color: #999;
+	margin: 0 0 0 0;
+}
+.menu li:last-child {
+	margin: 0;
+}
+
+.menu li.active {
+	color: #fff;
+	border: none;
+}
+
+.menu.sub-menu {
+	justify-content: center;
+}
+
 
 }
 
 
 /* >= 840px
 ----------------------------------------------*/
-@media (min-width: 840px) {
+@media (min-width: 870px) {
 
 
 	/* COMMON

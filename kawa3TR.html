@@ -33,33 +33,40 @@ Demirci Kawa Türkçe Versiyon
 
 
 <body>
-	<header class="header-fixed">
+	<header class="header-fixed" id="top-header">
 
 		<figure id="logo" class="font700">
-			<img src="images/logo.png" alt="SiNCaR">
+		  <img src="images/logo.png" alt="SiNCaR">
 		</figure>
-
-		<nav class="menu">
-			<ul class="top-menu">
-				<li><a href="indexTR.html">Ana Sayfa </a></li>
-				<li><a href="#">Version</a>
-					<ul class="sub-menu">
-						<li><a href="kawaTR.html">Version 1</a></li>
-						<li><a href="kawa2TR.html">Version 2</a></li>
-						<li><a href="kawa3TR.html">Version 3</a></li>
-					</ul>
-				<li><a href="#">Dil Seçimi</a>
-					<ul class="sub-menu">
-						<li><a href="kawa3FR.html">Francais</a></li>
-						<li><a href="kawa3.html">English</a></li>
-						<li><a href="kawa3TR.html">Türkçe</a></li>
-					</ul>
-				</li>
-				<li><a href="aboutTR.html">Bizimle iletişime Geçin</a></li>
-			</ul>
+	
+		<figure id="nav-triggers">
+				<a href="javascript:void(0)" id="open-menu" class="trigger"><img src="images/burger-icon.svg"
+						alt="Burger Menu Icon"></a>
+				<a href="javascript:void(0)" id="close-menu" class="trigger"><img src="images/close-icon.svg"
+						alt="Close Menu Icon"></a>
+			</figure>
+	
+		<nav class="menu" id="main-nav">
+		  <ul class="top-menu menu row">
+			<li><a href="indexTR.html">Ana Sayfa </a></li>
+			<li><a href="aboutTR.html">Bizimle iletişime Geçin</a></li>
+			<li><a href="#">Version</a>
+				<ul class="sub-menu">
+					<li><a href="kawaTR.html">Version 1</a></li>
+					<li><a href="kawa2TR.html">Version 2</a></li>
+					<li><a href="kawa3TR.html">Version 3</a></li>
+				</ul>
+			<li><a href="#">Dil Seçimi</a>
+			  <ul class="sub-menu" id="sub-menu">
+				<li><a href="kawa3FR.html">Francais</a></li>
+				<li><a href="kawa3.html">English</a></li>
+				<li><a href="kawa3TR.html">Türkçe</a></li>
+			  </ul>
+			</li>
+		  </ul>
 		</nav>
-
-	</header>
+	
+	  </header>
 	<main id="main" class="is-preload">
 
 		<!-- Wrapper -->

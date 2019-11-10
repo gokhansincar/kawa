@@ -33,15 +33,23 @@ about
 </head>
 
 <body>
-  <header class="header-fixed">
+  <header class="header-fixed" id="top-header">
 
     <figure id="logo" class="font700">
       <img src="images/logo.png" alt="SiNCaR">
     </figure>
 
-    <nav class="menu">
-      <ul class="top-menu">
+    <figure id="nav-triggers">
+			<a href="javascript:void(0)" id="open-menu" class="trigger"><img src="images/burger-icon.svg"
+					alt="Burger Menu Icon"></a>
+			<a href="javascript:void(0)" id="close-menu" class="trigger"><img src="images/close-icon.svg"
+					alt="Close Menu Icon"></a>
+		</figure>
+
+    <nav class="menu" id="main-nav">
+      <ul class="top-menu menu row">
         <li><a href="indexTR.html">Ana Sayfa </a></li>
+        <li><a href="aboutTR.html">Bizimle iletişime Geçin</a></li>
         <li><a href="#">Dil Seçimi</a>
           <ul class="sub-menu">
             <li><a href="aboutFR.html">Francais</a></li>
@@ -49,7 +57,6 @@ about
             <li><a href="aboutTR.html">Türkçe</a></li>
           </ul>
         </li>
-        <li><a href="aboutTR.html">Bizimle iletişime Geçin</a></li>
       </ul>
     </nav>
 

@@ -33,32 +33,39 @@ BlackSmith Kawa English Version
 
 
 <body>
-	<header class="header-fixed">
-
+	<header class="header-fixed" id="top-header">
+	
 		<figure id="logo" class="font700">
 			<img src="images/logo.png" alt="SiNCaR">
 		</figure>
-
-		<nav class="menu">
-			<ul class="top-menu">
+	
+		<figure id="nav-triggers">
+			<a href="javascript:void(0)" id="open-menu" class="trigger"><img src="images/burger-icon.svg"
+					alt="Burger Menu Icon"></a>
+			<a href="javascript:void(0)" id="close-menu" class="trigger"><img src="images/close-icon.svg"
+					alt="Close Menu Icon"></a>
+		</figure>
+	
+		<nav class="menu" id="main-nav">
+			<ul class="top-menu menu row">
 				<li><a href="index.html">Home Page</a></li>
+				<li><a href="about.html">Contact Us</a></li>
 				<li><a href="#">Version</a>
 					<ul class="sub-menu">
 						<li><a href="kawa.html">Version 1</a></li>
 						<li><a href="kawa2.html">Version 2</a></li>
 						<li><a href="kawa3.html">Version 3</a></li>
 					</ul>
-				<li><a href="#">Language selection</a>
-					<ul class="sub-menu">
+				<li><a href="#">Language</a>
+					<ul class="sub-menu" id="sub-menu">
 						<li><a href="kawa2FR.html">Francais</a></li>
 						<li><a href="kawa2.html">English</a></li>
 						<li><a href="kawa2TR.html">Türkçe</a></li>
 					</ul>
 				</li>
-				<li><a href="about.html">Contact Us</a></li>
 			</ul>
 		</nav>
-
+	
 	</header>
 	<main id="main" class="is-preload">
 

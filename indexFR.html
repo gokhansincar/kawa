@@ -33,27 +33,33 @@ Kawa le Forgeron Version Francaise
 
 
 <body>
-	<header class="header-fixed">
+	<header class="header-fixed" id="top-header">
 
 		<figure id="logo" class="font700">
-			<img src="images/logo.png" alt="SiNCaR">
+		  <img src="images/logo.png" alt="SiNCaR">
 		</figure>
-
+	
+		<figure id="nav-triggers">
+				<a href="javascript:void(0)" id="open-menu" class="trigger"><img src="images/burger-icon.svg" alt="Burger Menu Icon"></a>
+				<a href="javascript:void(0)" id="close-menu" class="trigger"><img src="images/close-icon.svg" alt="Close Menu Icon"></a>
+			  </figure>
+	
 		<nav class="menu" id="main-nav">
-			<ul class="top-menu menu row">
-				<li><a href="indexFR.html">Page d'accueil </a></li>
-				<li><a href="#">Sélection de la langues</a>
-					<ul class="sub-menu">
-						<li><a href="indexFR.html">Francais</a></li>
-						<li><a href="index.html">English</a></li>
-						<li><a href="indexTR.html">Türkçe</a></li>
-					</ul>
-				</li>
-				<li><a href="aboutFR.html">Contactez-nous</a></li>
-			</ul>
+		  <ul class="top-menu menu row">
+			<li><a href="indexFR.html">Page d'accueil </a></li>
+			<li><a href="aboutFR.html">Contactez-nous</a></li>
+			<li><a href="#">Sélection de la langues</a>
+			  <ul class="sub-menu">
+				<li><a href="indexFR.html">Francais</a></li>
+				<li><a href="index.html">English</a></li>
+				<li><a href="indexTR.html">Türkçe</a></li>
+			  </ul>
+			</li>
+	
+		  </ul>
 		</nav>
-
-	</header>
+	
+	  </header>
 	<main id="main" class="is-preload">
 
 		<!-- Wrapper -->
