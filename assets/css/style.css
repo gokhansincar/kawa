@@ -251,13 +251,22 @@ img {
 	box-align: center;
   }
 
-  .menu ul li ul{
-	  position: absolute;
-	  left: -9000em;	
+  .menu ul li ul {
+	  position: relative;
+	  /* left: -9000em; */
+	  height: 0;
+	  overflow: hidden;
+	  transition: height .3s ease;
   }
-   
-  .menu ul li:hover ul{
+/*    
+  .menu ul li.parent:hover ul {
 	left: 0;
+	z-index: 1;
+  } */
+  .parent.open-sub ul {
+	/* left: 0; */
+	z-index: 1;
+	height: auto;
   }
    
   .menu ul li a{
@@ -584,7 +593,73 @@ button {
 }
 .copyright li {
 	display: block;
+	margin-top: 4em;
 }
+
+	/* Icons */
+
+	ul.icons {
+		cursor: default;
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 2em;
+		text-align: center;
+	}
+
+		ul.icons li {
+			display: inline-block;
+			padding: 0 0.75rem 0 0;
+		}
+
+			ul.icons li:last-child {
+				padding-right: 0mm;
+			}
+
+
+			.fa {
+				padding: 10px;
+				font-size: 20px;
+				width: 40px;
+				text-align: center;
+				text-decoration: none;
+				margin: 5px 2px;
+				border-radius: 50%;
+			  }
+			  
+			  .fa:hover {
+				  opacity: 0.7;
+			  }
+			  
+			  .fa-facebook {
+				background: #3B5998;
+				color: white;
+			  }
+			  
+			  .fa-twitter {
+				background: #55ACEE;
+				color: white;
+			  }
+			  
+			  .fa-instagram {
+				background: #125688;
+				color: white;
+			  }
+			  
+			  .fa-linkedin {
+				background: #007bb5;
+				color: white;
+			  }
+			  
+			  .fa-github {
+				background: #000000;
+				color: white;
+			  }
+			  
+			  .fa-envelope {
+				background: #dd4b39;
+				color: white;
+			  }
+
 
 
 /* CONTAINERS COMMON
@@ -926,9 +1001,14 @@ background-color: initial;
 .trigger img {
 	width: 60%;
 }
+
+
 /*WHEN menu is closed*/
 #close-menu {
 	left: -100%;
+}
+#close-menu img {
+	filter: invert(1);
 }
 
 /* When menu is opened*/
@@ -1094,67 +1174,6 @@ background-color: initial;
 		width: 50%;
 	}
 	
-	/* Icons */
-
-	ul.icons {
-		cursor: default;
-		list-style: none;
-		padding-left: 0;
-	}
-
-		ul.icons li {
-			display: inline-block;
-			padding: 0 0.75rem 0 0;
-		}
-
-			ul.icons li:last-child {
-				padding-right: 0mm;
-			}
-
-
-			.fa {
-				padding: 10px;
-				font-size: 20px;
-				width: 40px;
-				text-align: center;
-				text-decoration: none;
-				margin: 5px 2px;
-				border-radius: 50%;
-			  }
-			  
-			  .fa:hover {
-				  opacity: 0.7;
-			  }
-			  
-			  .fa-facebook {
-				background: #3B5998;
-				color: white;
-			  }
-			  
-			  .fa-twitter {
-				background: #55ACEE;
-				color: white;
-			  }
-			  
-			  .fa-instagram {
-				background: #125688;
-				color: white;
-			  }
-			  
-			  .fa-linkedin {
-				background: #007bb5;
-				color: white;
-			  }
-			  
-			  .fa-github {
-				background: #000000;
-				color: white;
-			  }
-			  
-			  .fa-envelope {
-				background: #dd4b39;
-				color: white;
-			  }
 			  
 
 
