@@ -1,3 +1,5 @@
+// Open menu For Mobile
+
 const body = document.querySelector("body");
 const openMenu = document.querySelector("#open-menu");
 const closeMenu = document.querySelector("#close-menu");
@@ -10,6 +12,7 @@ closeMenu.addEventListener('click', function () {
     body.classList.remove('menu-is-open');
 });
 
+// Script for open links version or language
 
 topMenu.addEventListener('click', function (e) {
 
