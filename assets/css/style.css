@@ -70,6 +70,11 @@ h3 {
 ----------------------------------------------*/
 p {
   margin-bottom: 2em;
+  
+}
+
+.copy {
+	text-align: center;
 }
 
 
@@ -253,7 +258,7 @@ img {
 
   .menu ul li ul {
 	  position: relative;
-	  /* left: -9000em; */
+	  left: 0;
 	  height: 0;
 	  overflow: hidden;
 	  transition: height .3s ease;
@@ -592,6 +597,7 @@ button {
 	padding: 5em 4% 10em;
 }
 .copyright li {
+	text-align: center;
 	display: block;
 	margin-top: 4em;
 }
@@ -677,6 +683,7 @@ button {
 .row section:last-child {
 	margin: 0;
 }
+
 
 /*Side Bar*/
 .sidebar section {
@@ -1146,6 +1153,10 @@ background-color: initial;
 		margin: 0;
 	}
 
+	.menu ul li ul {
+		position: absolute;
+	}
+
 	/*CONTAINER*/
 	.container {
 		margin-bottom: 2em;
@@ -1161,9 +1172,10 @@ background-color: initial;
 	.section {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
-		margin: 0px 20px 0px 0px;
+		align-items: flex-start;
+		margin: 0 20px 0 0;
 	}
+
 	.section.reverse {
 		flex-direction: row-reverse!important;
 	}
@@ -1174,6 +1186,9 @@ background-color: initial;
 		width: 50%;
 	}
 	
+	.section .text {
+		padding: 0 2em 1em 2em;
+	}
 			  
 
 
@@ -1281,11 +1296,6 @@ background-color: initial;
 		margin-left: 2em;
 	}
 
-	#main {
-		max-width: 960px;
-	}
-
-
 	/* HOME
 	----------------------------------*/
 	.style-1 .text {
@@ -1312,7 +1322,9 @@ background-color: initial;
 	#main {
 		max-width: 1200px;
 	}
-
+	.section .text {
+		padding: 0 3em 1em 3em;
+	}
 
 }
 
